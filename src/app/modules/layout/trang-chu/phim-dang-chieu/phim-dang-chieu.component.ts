@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PhimService } from 'src/app/_core/service/phim.service';
+import { Phim } from 'src/app/_core/model/phim';
 
 @Component({
   selector: 'app-phim-dang-chieu',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./phim-dang-chieu.component.css']
 })
 export class PhimDangChieuComponent implements OnInit {
-
-  constructor() { }
+  mangPhim:Array<Phim> = [];
+  constructor(private danhSachPhim: PhimService) { }
 
   ngOnInit() {
+    this.danhSachPhim.LayDanhSachPhim().subscribe((res: any) => {
+      if (typeof res == 'object') {
+        this.mangPhim = res;
+        console.log(res);
+      }
+    })
   }
-
+  DatVe(){
+    
+  }
 }

@@ -1,0 +1,30 @@
+<app-header></app-header>
+<div class="main-wrap">
+  <div class="section section-padding video-list-section">
+    <div class="container">
+      <div class="row">
+        <div class="show-listing ">
+           <app-phim class="col-md-3 col-sm-4 col-xs-6" *ngFor='let phim of danhSachPhim;let i=index;' [phim]='phim'>
+              <br *ngIf='(i+1)%4 == 0' />
+           </app-phim>
+          <div class="col-xs-12">
+            <!-- Video Pagination -->
+            <nav class="navigation pagination" role="navigation">
+              <div class="nav-links">
+                <span class="current-page">Page 2 of 14</span>
+                <a class="prev page-numbers" href="#"><i class="fa fa-caret-left"></i></a>
+                <a class="page-numbers" href="#">1</a>
+                <span class="page-numbers current">2</span>
+                <a class="page-numbers" href="#">3</a>
+                <a class="page-numbers" href="#">4</a>
+                <a class="next page-numbers" href="#"><i class="fa fa-caret-right"></i></a>
+              </div>
+            </nav>
+            <!-- Video Pagination End -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

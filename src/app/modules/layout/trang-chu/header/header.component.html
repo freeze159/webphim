@@ -1,61 +1,70 @@
- <!-- Preloader -->
- <div class="preloader" id="preloader">
-  <div class="lds-css ng-scope">
-      <div class="lds-ripple">
-          <div></div>
-          <div></div>
-      </div>
-  </div>
-</div>
+<!-- Preloader -->
+<!-- <div class="preloader" id="preloader">
+    <div class="lds-css ng-scope">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div> -->
 <!-- Preloader End -->
 
 <!-- Top Header -->
 <header class="topbar text-white" id="topbar">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-6 col-sm-8">
-              <p class="topbar-intro">Enjoy your favourite movie, TV show &amp; video in a single subscription at $60</p>
-          </div>
-          <div class="col-lg-6 col-sm-4">
-              <div class="topbar-right-btns">
-                  <a class="btn" href="login.html">Log In</a>
-                  <a class="btn" href="signup.html">Register</a>
-              </div>
-          </div>
-      </div>
-  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-8">
+                <!-- <p class="topbar-intro">Enjoy your favourite movie, TV show &amp; video in a single subscription at $60
+                </p> -->
+            </div>
+            <div class="col-lg-6 col-sm-4">
+                <div class="topbar-right-btns">
+                    <a class="btn" routerLink='/dangnhap'>Log In</a>
+                    <a class="btn" routerLink='/dangky'>Register</a>
+                    <div class="dropdown">
+                        <a class="btn" routerLink='/{{redirect}}'><i class="fa fa-user" ></i> {{tenUser}}</a>
+                        <div class="dropdown-content" *ngIf='loged'>
+                            <a routerLink='user' class="btn">Profile</a>                          
+                            <a (click)="dangXuat()" class="btn">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <!-- Top Header End -->
 <!-- Main Header -->
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/template/logo.png" alt="Site Logo">
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="main-nav-collapse">
-                <form class="navbar-form navbar-left">
-                    <input type="search" name="searchinput" required>
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="tv-show.html">Trang chủ</a></li>
-                    <li>
-                        <a href="movie-list.html">Phim</a>
-                    </li>
-                    <li><a href="news.html">Tin tức</a></li>
-                </ul>
-            </div>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#main-nav-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/template/logo.png" alt="Site Logo">
+            </a>
         </div>
-    </nav>
-    <!-- Main Header End -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-nav-collapse">
+            <form class="navbar-form navbar-left">
+                <input type="search" name="searchinput" required>
+                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Trang chủ</a></li>
+                <li>
+                    <a href="#">Phim</a>
+                </li>
+                <li><a href="#tintuc">Tin tức</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Main Header End -->

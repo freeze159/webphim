@@ -154,6 +154,8 @@ textarea {
 /*------------------------------------------------------
 Preloader Styles
 ------------------------------------------------------*/
+/* You can add global styles to this file, and also import other style files */
+
 .preloader {
   position: fixed;
   z-index: 999;
@@ -216,8 +218,8 @@ Preloader Styles
   border-style: solid;
   opacity: 1;
   border-radius: 50%;
-  -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite ;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite ;
 }
 
 .lds-ripple div:nth-child(1) {
@@ -268,7 +270,7 @@ Button Styles
   font-size: 1.8rem;
   font-weight: 500;
   color: #ffffff;
-  background-color: #eb1436;
+  /* background-color: #eb1436; */
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   line-height: 50px;
@@ -277,12 +279,12 @@ Button Styles
 }
 .btn:focus, .btn:visited, .btn:active {
   color: #ffffff;
-  background-color: #eb1436;
+  /* background-color: #eb1436; */
   outline: none;
 }
 .btn:hover {
   color: #ffffff;
-  background-color: #111111;
+  background-color: cornflowerblue;
   outline: none;
 }
 
@@ -2181,10 +2183,11 @@ p + .contact-infos {
 /*------------------------------------------------------
 Login Page Styles
 ------------------------------------------------------*/
-.account-page {
+.account-page{
   background-color: #272e30;
+  height: 1012px;
+  margin-top: -120px;
 }
-
 .account-wrap {
   max-width: 430px;
   width: 100%;

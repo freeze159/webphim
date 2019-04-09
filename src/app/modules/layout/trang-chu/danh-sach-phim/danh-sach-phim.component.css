@@ -1,0 +1,12 @@
+
+.show-listing {
+    clear: both;
+    width: 100%;
+  }
+  .show-listing .video-item {
+    margin-bottom: 50px;
+  }
+  .show-listing .pagination {
+    margin-top: 0;
+  }
+  

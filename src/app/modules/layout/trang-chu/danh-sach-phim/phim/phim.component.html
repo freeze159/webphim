@@ -1,0 +1,14 @@
+<div class="video-item">
+    <div class="thumb-wrap">
+      <img src={{phim.HinhAnh}} alt="Movie Thumb">
+      <span class="rating">{{phim.DanhGia}}</span>
+      <div class="thumb-hover">
+        <a class="play-video" href={{phim.Trailer}}><i class="fa fa-play"></i></a>
+      </div>
+    </div>
+    <div class="video-details">
+      <h4 class="video-title"><a href="movie-detail.html">{{phim.TenPhim}}</a></h4>
+      <p class="video-release-on">{{phim.NgayKhoiChieu | date:'dd-MM-yyyy'}}</p>
+    </div>
+  </div>
+  <ng-content></ng-content>

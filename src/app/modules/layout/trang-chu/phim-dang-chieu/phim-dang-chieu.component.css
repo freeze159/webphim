@@ -1,0 +1,18 @@
+.owl-item{
+    min-height:531px!important;
+}
+h4.video-title{
+    min-height: 40px;
+}
+.thumb-hover{
+    position: absolute;
+    background: transparent;
+    
+}
+.booking-btn{
+    position: absolute;
+    bottom: 0px;
+    padding-left: 25%;
+   
+
+}

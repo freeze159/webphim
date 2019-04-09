@@ -1,0 +1,19 @@
+
+.btn{
+    margin: 15px;
+    background: #969191;
+}
+.gheDaDat{
+    cursor: no-drop;
+    background-color: red;
+}
+
+.gheDangDat{
+    cursor: pointer;
+    background-color: rgb(74, 228, 74);
+}
+
+.btn{
+    border-radius: 10px;
+}
+
