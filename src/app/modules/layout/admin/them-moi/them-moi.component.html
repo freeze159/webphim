@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row">
+    <form #frmThemMoi="ngForm" class="accountform col-md-8 col-sm-10 col-xs-12" (ngSubmit)="ThemMoi(frmThemMoi.value)">
+      <h3 class="lead">Thêm Phim Mới</h3>
+      <div class="basic-field">
+        <label>Mã Phim <br />
+          <p>
+            <input type="text" name="MaPhim" class="form-control" ngModel required>
+          </p>
+        </label>
+        <label>Tên Phim <br />
+          <p>
+            <input type="text" class="form-control" name="TenPhim"ngModel required>
+          </p>
+        </label>
+        <label>Trailer <br />
+          <p>
+            <input class="form-control" name="Trailer" ngModel type="text" required />
+          </p>
+        </label>
+        <label>Hình Ảnh <br />
+          <p>
+            <input required class="form-control" name="HinhAnh" ngModel type="text" />
+          </p>
+        </label>
+        <label>Mô tả<br />
+          <p>
+            <input required class="form-control" name="MoTa" ngModel type="text" />
+          </p>
+        </label>
+        <label>Mã Nhóm<br />
+          <p>
+            <input required class="form-control" name="MaNhom" ngModel type="text" />
+          </p>
+        </label>
+        <label>Ngày Khởi Chiếu<br />
+          <p>
+            <input required class="form-control" name="NgayKhoiChieu" ngModel type="date" />
+          </p>
+        </label>
+        <label>Đánh Giá<br />
+          <p>
+            <input required class="form-control" name="DanhGia" ngModel type="text" />
+          </p>
+        </label>
+      </div>
+      <button [disabled]="frmThemMoi.invalid" type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+  </div>
+</div>

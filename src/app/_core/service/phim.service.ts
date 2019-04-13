@@ -1,6 +1,7 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, from } from 'rxjs';
+import { Phim } from '../model/phim';
 
 
 @Injectable({
@@ -30,5 +31,18 @@ export class PhimService {
     header.append('Content-Type', 'application/json;charset=UTF-8');
     const observable = this.http.post(linkApi, thongTinDatVe);
     return observable;
+  }
+  public Them(thongtin:Phim):Observable<any>{
+    const linkApi = `http://svcy2.myclass.vn/api/QuanLyPhim/ThemPhimMoi`;
+    const header: HttpHeaders = new HttpHeaders(); // Cho biết định dạng dữ liệu truyền đi
+    header.append('Content-Type', 'application/json;charset=UTF-8');
+    const observable = this.http.post(linkApi, thongtin);
+    return observable;
+  }
+  public Xoa(){
+
+  }
+  public Sua(){
+
   }
 }

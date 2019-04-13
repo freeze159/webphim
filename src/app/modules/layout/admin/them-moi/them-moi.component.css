@@ -1,0 +1,10 @@
+.accountform{
+    margin:50px 200px;
+    padding: auto auto;
+}
+@media screen and (max-width: 1025px) {
+    .accountform{
+        margin: 0 0;
+        padding: 0 0;
+    }
+  } 

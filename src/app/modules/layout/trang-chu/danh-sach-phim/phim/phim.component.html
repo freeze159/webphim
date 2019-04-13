@@ -4,6 +4,9 @@
       <span class="rating">{{phim.DanhGia}}</span>
       <div class="thumb-hover">
         <a class="play-video" href={{phim.Trailer}}><i class="fa fa-play"></i></a>
+        <div class="booking-btn">
+            <a href="#" class="btn btn-success" routerLink="/chitietphim" [queryParams]="{MaPhim:phim.MaPhim,TenPhim:phim.TenPhim}">Đặt vé</a>
+        </div>
       </div>
     </div>
     <div class="video-details">

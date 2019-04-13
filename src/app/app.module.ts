@@ -4,9 +4,11 @@ import { AppComponent } from './app.component';
 import { TrangChuModule } from './modules/layout/trang-chu/trang-chu.module'
 import { HttpClientModule } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
+import { AdminModule } from './modules/layout/admin/admin.module';
 
 const appRoute: Routes = [
   { path: 'home', loadChildren: () => TrangChuModule },
+  { path: 'admin', loadChildren: () => AdminModule },
   { path: '', loadChildren: () => TrangChuModule },
 ]
 

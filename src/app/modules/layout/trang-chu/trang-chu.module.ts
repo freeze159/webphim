@@ -37,6 +37,6 @@ const homeRoutes: Routes = [
   imports: [
     CommonModule, RouterModule.forChild(homeRoutes), FormsModule
   ],
-  exports: [TrangChuComponent, HeaderComponent, BannerComponent, LoaiPhimComponent, PhimDangChieuComponent, PhimSapChieuComponent, ItemPhimComponent, TinTucComponent, ItemTinTucComponent, FooterComponent]
+  exports: [HeaderComponent, BannerComponent, LoaiPhimComponent, PhimDangChieuComponent, PhimSapChieuComponent, ItemPhimComponent, TinTucComponent, ItemTinTucComponent, FooterComponent]
 })
 export class TrangChuModule { }

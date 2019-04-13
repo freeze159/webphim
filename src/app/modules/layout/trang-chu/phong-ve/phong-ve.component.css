@@ -5,6 +5,10 @@
 .btn-success{
     background: green;
 }
+.btn{
+    width: 200px;
+    margin-bottom:12px;
+}
 .screen{
     -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0 100%);
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0 100%);
@@ -39,6 +43,9 @@
     /* top: 50%; */
     background: #ffffff;
 }
+.viTriGhe{
+    
+}
 .thongTinVe p{
     font-size: 20px;
     font-weight: 700;
@@ -62,5 +69,18 @@
 .thongTinVe button.thanhtoan{
     
     /* transform: translate(20%,0); */
+}
+@media (max-width: 1024px){
+    .gido{
+        display: none;
+    }
+    .thongTinVe{
+        width: 100%;
+        /* display: none; */
+    }
+    .viTriGhe {
+        width: 100%;
+        height: inherit;
+    }
 }
 

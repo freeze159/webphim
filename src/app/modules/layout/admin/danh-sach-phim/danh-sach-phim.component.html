@@ -1,12 +1,21 @@
-<app-header></app-header>
-<div class="main-wrap">
+<div class="main-wrap" id="mainW">
   <div class="section section-padding video-list-section">
     <div class="container">
-      <div class="row">
-        <div class="show-listing ">
-           <app-phim class="col-md-4 col-sm-5 col-xs-6" *ngFor='let phim of danhSachPhim;let i=index;' [phim]='phim'>
-              <!-- <br *ngIf='(i+1)%4 == 0' /> -->
-           </app-phim>
+      <div class="row">    
+          <div class="video-item col-md-4" *ngFor='let phim of danhSachPhim;'>
+            <div class="thumb-wrap">
+              <img src={{phim.HinhAnh}} alt="Movie Thumb">
+              <span class="rating">{{phim.DanhGia}}</span>
+              <div class="thumb-hover">
+                <a class="play-video" href={{phim.Trailer}}><i class="fa fa-play"></i></a>
+                
+              </div>
+            </div>
+            <div class="video-details">
+              <h4 class="video-title"><a href="movie-detail.html">{{phim.TenPhim}}</a></h4>
+              <p class="video-release-on">{{phim.NgayKhoiChieu | date:'dd-MM-yyyy'}}</p>
+            </div>
+          </div>
           <div class="col-xs-12">
             <!-- Video Pagination -->
             <nav class="navigation pagination" role="navigation">
@@ -22,9 +31,8 @@
             </nav>
             <!-- Video Pagination End -->
           </div>
-        </div>
+        
       </div>
     </div>
   </div>
 </div>
-<app-footer></app-footer>
